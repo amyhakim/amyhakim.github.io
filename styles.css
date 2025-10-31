@@ -1,18 +1,16 @@
-  html,
+   html,
   body {
     height: 100%;
     margin: 0;
 
   }
-
-
-  body {
+   
+   body {
     background-image: url('bg2.gif');
     font-family: 'Radio Canada';
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 0;
     color: #4b5c7a;
     overflow-x: hidden;
