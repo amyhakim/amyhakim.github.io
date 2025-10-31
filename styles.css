@@ -172,6 +172,12 @@
     transition: color 0.3s ease;
   }
 
+  .projects-link strong:hover{
+    text-decoration: underline;
+    color: #4cb1f0;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
 
   .projects-dropdown {
     display: none;
@@ -211,6 +217,9 @@
 
   .project-links a:hover {
     text-decoration: underline;
+    color: #4cb1f0;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
   }
 
 
