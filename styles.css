@@ -55,11 +55,11 @@
   } 
 }
 
-@media (hover: none) and (pointer: coarse) {
-     .decor-top-right:active {
-        transform: translate(45%, -40%) rotate(15deg);
-    }
+
+.decor-top-right.rotated {
+  transform: translate(45%, -40%) rotate(15deg);
 }
+
  /* .corner-icon {
     position: absolute;
     top: -85px;
