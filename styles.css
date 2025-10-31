@@ -1,165 +1,192 @@
+   html,
+  body {
+    height: 100%;
+    margin: 0;
+
+  }
+   
    body {
-     background-image: url('bg2.gif');
-     font-family: 'Radio Canada';
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     min-height: 100vh;
-     margin: 0;
-     color: #4b5c7a;
-   }
+    background-image: url('bg2.gif');
+    font-family: 'Radio Canada';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #4b5c7a;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
 
-   .card {
-     border: 1px solid #4b5c7a;
-     padding: 20px;
-     display: flex;
-     flex-direction: column;
-     max-width: 430px;
-     max-height: none;
-     justify-content: center;
-     gap: 1rem;
-     background-color: white;
-    
-   }
+  .card {
+    border: 1px solid #4b5c7a;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+    max-height: none;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
 
-   .card-body {
-     display: flex;
-     width: 100%;
-     justify-content: center;
-   }
+  }
 
 
-   .profile {
-     flex-shrink: 0;
-     width: 100px;
-     height: 100px;
-     background-color: #3d4449;
-     border-radius: 50%;
-     justify-content: center;
-   }
 
-   .profile-text {
-     text-align: center;
-   }
+  .corner-icon {
+    position: absolute;
+    top: -85px;
+    right: -180px;
+    width: max(250px, 400px);
+    z-index: 2;
+    height: auto;
 
-   .profile-text h2 {
-     font-family: 'Radio Canada';
-     font-weight: bold;
-     color: #7aaac7;
-     margin: 0;
-     margin-bottom: .5rem;
-     font-size: 1.2rem;
-   }
 
-   .profile-text p {
-     margin: 2px 0;
-     margin-bottom: .2rem;
-     font-family: 'Radio Canada';
-   }
+  }
 
-   .profile-text img {
-     width: 32px;
-     height: 32px;
-     margin-left: 8px;
-     vertical-align: middle;
-   }
+  .card-body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 
-   .icon-group {
-     display: flex;
-     justify-content: center;
-     gap: 1.2rem;
 
-   }
+  .profile {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #3d4449;
+    border-radius: 50%;
+    justify-content: center;
+  }
 
-   .icon a {
-     width: 40px;
-     height: 40px;
-     border-radius: 50%;
-     background-color: rgb(139, 148, 153);
-     overflow: hidden;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     cursor: pointer;
-     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-   }
+  .profile-text {
+    text-align: center;
+  }
 
-   .icon img {
-     width: 70%;
-     height: 70%;
-     object-fit: contain;
-     display: block;
-     margin: auto;
-   }
+  .profile-text h2 {
+    font-family: 'Radio Canada';
+    font-weight: bold;
+    color: #7aaac7;
+    margin: 0;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+  }
 
-   .icon svg {
-     width: 100%;
-     height: 100%;
-     display: block;
-   }
+  .profile-text p {
+    margin: 2px 0;
+    margin-bottom: .2rem;
+    font-family: 'Radio Canada';
+  }
+
+  .profile-text img {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  .icon-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+
+  }
+
+  .icon a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(139, 148, 153);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .icon img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+
+  .icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 
   .projects-link strong {
-  font-family: 'Radio Canada', sans-serif;
-  font-weight: bold;
-  color: #7aaac7;
- 
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: bold;
+    color: #7aaac7;
 
-
-.projects-dropdown {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  
-  border-radius: 8px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.project {
-  margin-bottom: 16px;
-  font-family: 'Radio Canada', sans-serif;
-}
-
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.project-name {
-  font-weight: 400;
-  color: #3d4449;
-  margin: 0;
-}
-
-.project-links a {
-  margin-left: 16px;
-  color: #7aaac7;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-
-.project-description {
-  margin-top: 5px;
-  font-weight: 400;
-  color: #8e8e8e;
-}
-
-
-@media (min-width: 1024px) {
-  .card {
-    max-width: 700px;
-    padding: 40px;
+    cursor: pointer;
+    transition: color 0.3s ease;
   }
-}
 
-@media (min-width: 1440px) {
-  .card {
-    max-width: 900px;
-    padding: 50px;
+
+  .projects-dropdown {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+
+    border-radius: 8px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
+
+  .project {
+    margin-bottom: 16px;
+    font-family: 'Radio Canada', sans-serif;
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project-name {
+    font-weight: 400;
+    color: #3d4449;
+    margin: 0;
+  }
+
+  .project-links a {
+    margin-left: 16px;
+    color: #7aaac7;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+
+  .project-links a:hover {
+    text-decoration: underline;
+  }
+
+
+  .project-description {
+    margin-top: 5px;
+    font-weight: 400;
+    color: #8e8e8e;
+  }
+
+
+  @media (min-width: 1024px) {
+    .card {
+      max-width: 700px;
+      padding: 40px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .card {
+      max-width: 900px;
+      padding: 50px;
+    }
+  }
