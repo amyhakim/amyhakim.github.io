@@ -7,3 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
     projectsDropdown.style.display = isVisible ? 'none' : 'block';
   });
 });
+
+const decor = document.querySelector('.decor-top-right');
+
+decor.addEventListener('touchstart', () => {
+  decor.style.transform = 'translate(45%, -40%) rotate(15deg)';
+});
+
+decor.addEventListener('touchend', () => {
+  decor.style.transform = 'translate(45%, -40%) rotate(0deg)';
+});
