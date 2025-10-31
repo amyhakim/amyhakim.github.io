@@ -49,16 +49,31 @@
     transition: transform 0.3s ease;
 }
 
+.decor-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: clamp(100px, 15vw, 150px);
+    height: auto;
+    z-index: 2;
+    transform: translate(-45%, 40%) rotate(0deg);
+    transition: transform 0.3s ease;
+    pointer-events: auto; 
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+    .decor-bottom-left:hover {
+        transform: translate(-45%, 40%) rotate(15deg);
+    }
+}
+
 @media (hover: hover) and (pointer: fine) { 
   .decor-top-right:hover { 
-    transform: translate(45%, -40%) rotate(15deg); 
+    transform: translate(45%, -40%) rotate(-15deg); 
   } 
 }
 
-
-.decor-top-right.rotated {
-  transform: translate(45%, -40%) rotate(15deg);
-}
 
  /* .corner-icon {
     position: absolute;

@@ -15,8 +15,3 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-const decor = document.querySelector('.decor-top-right');
-
-decor.addEventListener('click', () => {
-  decor.classList.toggle('rotated');
-});
