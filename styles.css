@@ -19,7 +19,7 @@
 
   .card {
     border: 1px solid #4b5c7a;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     max-width: 430px;
@@ -37,13 +37,6 @@
     align-items: center;
   }
 
-.decor {
-    position: absolute;              
-    width: clamp(250px, 30vw, 400px); 
-    height: auto;
-    pointer-events: none;
-    z-index: 2;
-}
 .decor-top-right {
     position: absolute;
     top: 0;        
@@ -160,7 +153,7 @@
     padding: 10px;
 
     border-radius: 8px;
-    max-width: 500px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
