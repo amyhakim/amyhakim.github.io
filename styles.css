@@ -1,11 +1,10 @@
-   html,
+  html,
   body {
     height: 100%;
     margin: 0;
-
   }
-   
-   body {
+
+  body {
     background-image: url('bg2.gif');
     font-family: 'Radio Canada';
     display: flex;
@@ -26,10 +25,13 @@
     max-height: none;
     justify-content: center;
     gap: 1rem;
-    position: relative;
-
   }
 
+
+  .card-container {
+    position: relative;
+    display: inline-block;
+  }
 
 
   .corner-icon {
@@ -39,6 +41,7 @@
     width: max(250px, 400px);
     z-index: 2;
     height: auto;
+    pointer-events: none;
 
 
   }
